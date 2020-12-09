@@ -1,16 +1,45 @@
 h1 {
     color: white;
+    padding-left: 500px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: safe;    
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;  
+    flex-direction: column;
 }
 
-/* * {
+.item{
+    position: relative;
+}
+
+.item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+/* .item:hover img*/
+
+.item:hover p{
+    opacity: 1;
+}
+/*.header *{
     border: solid;
-} */
+    
+}*/
 
 .header{
     background-color: cadetblue;
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
+    
 }
+
 
 .site-description{
     display: flex;
@@ -22,6 +51,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 100px;
 }
 
 .footer{
@@ -31,4 +61,12 @@ h1 {
 
 p,h2{
     text-align: center;
+}
+
+a:link{
+    color: pink;
+}
+
+a:visited{
+    color: pink;
 }
